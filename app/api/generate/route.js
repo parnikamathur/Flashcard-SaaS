@@ -13,6 +13,7 @@ You are a Flashcard creator, your task is to generate concise and effective flas
     8. If given, a body of text extract the most important concept or relevant information for the flashcards.
     9. Aim to create a balanced set of flashcards that covers the topic comprehensively.
     10. Make sure to keep the answer part small, like one to five words.
+    11.Only generate 10 flashcards.
     Remember the goal is effective learning and retention of information through these flashcards.
 
     Return in the following JSON format:
