@@ -3,7 +3,7 @@ import {useUser} from '@clerk/nextjs';
 import {use ,useEffect, useState} from 'react';
 
 import { CollectionReference, collection, doc, getDoc,setDoc } from 'firebase/firestore';
-import { db } from '../firebase';
+import { db } from '../../firebase';
 import { useRouter } from 'next/navigation';
 import { Router } from 'next/router';
 import { CardActionArea, Container, Grid, Typography, Card, CardContent } from '@mui/material';
@@ -41,7 +41,7 @@ export default function Flashcards() {
     <Grid container spacing = {3} sx = {{
       mt: 4
     }}>
-      {flashcards.map((flashcard, index)=>( 
+      {Flashcards.map((flashcard, index)=>( 
         <Grid item xs={12} sm = {6} md={4} key ={index}>
         <Card>
           <CardActionArea onClick = {()=>{handleCardClick(id)}}>

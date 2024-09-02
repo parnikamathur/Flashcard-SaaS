@@ -26,7 +26,7 @@ export default function Home() {
     const checkoutSession = await fetch("api/checkout_session", {
       method: "POST",
       headers: {
-        origin: "http://localhost:3001",
+        origin: "http://localhost:3000",
       },
     });
 
@@ -157,7 +157,7 @@ export default function Home() {
                 <Typography>
                   Unlimited flashcards and unlimited storage.
                 </Typography>
-                <Button variant="contained" sx={pricingButtonStyle}>
+                <Button variant="contained" sx={pricingButtonStyle} onclick={handleSubmit}>
                   Choose Pro
                 </Button>
               </Box>
